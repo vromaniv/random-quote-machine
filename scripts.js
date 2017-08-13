@@ -6,7 +6,6 @@ function getQuote() {
     $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", function (json) {
         let quote = json.quoteText;
         let author = json.quoteAuthor;
-        console.log(JSON.stringify(json));
         $('#quote_text').fadeOut(400, function () {
             $(this).html(quote).fadeIn(400);
         });
