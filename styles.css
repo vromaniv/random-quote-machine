@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(bg.png);
+    background-repeat: repeat;
+}
+
+#quote {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 500px;
+    height: 100%;
+}
+
+.red {
+    color: #e74c3c;
+}
+
+hr.style14 { 
+    margin-top: 30px;
+    border-top: 1px dotted #8c8b8b;
+    border-bottom: 1px dotted #fff;
+}
+
+.custom-btn {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+    border: 2px solid #343a40;
+    color: #e74c3c;
+}
+
+.btn-1:hover {
+  background: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-1:active {
+    top: 2px;
+}
