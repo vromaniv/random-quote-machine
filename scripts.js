@@ -3,7 +3,7 @@ $(document).ready(getQuote);
 $("#quote_btn").click(getQuote);
 
 function getQuote() {
-    $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", function (json) {
+    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", function (json) {
         let quote = json.quoteText;
         let author = json.quoteAuthor;
         console.log(JSON.stringify(json));
